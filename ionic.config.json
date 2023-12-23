@@ -1,0 +1,7 @@
+{
+  "name": "smpr-fe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
