@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <img class="logo" src="../../../assets/SAMPRlogo-removebg.png" alt="SamprLogo">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <div class="animated-background"></div> -->
+
+  <ion-slides pager="true" [options]="slideOptions">
+    <ion-slide *ngFor="let slide of slides">
+      <div class="slide-content">
+        <!-- <img [src]="slide.image" alt="Slide image" class="slide-image"/> -->
+        <h2>{{slide.title}}</h2>
+        <p>{{slide.subtitle}}</p>
+      </div>
+      <div class="arrow-container">
+        <ion-icon name="arrow-down" class="scroll-arrow"></ion-icon>
+      </div>
+    </ion-slide>
+    
+
+
+  </ion-slides>
+
+  <button class="button" routerLink="/login"><label>Começar</label></button>
+
+<br><br><br>  
+
+</ion-content>

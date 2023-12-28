@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <br>
+    <img class="logo" src="../../../assets/SAMPRlogo-removebg.png" alt="SamprLogo">
+    <br>
+  </ion-header>
+
+  <ion-label>Seja Bem Vindo {{userHealthData.user.name}}</ion-label> 
+
+<ion-card>
+
+  <ion-item>
+    <div class="tmb-div">
+      <ion-label class="tmb">Taxa Metabólica Basal</ion-label>
+      <ion-label class="tmb-numeros">{{userHealthData.bmr}}</ion-label>
+    </div>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Índice da Massa Corporal</ion-label>
+    <ion-label>{{userHealthData.bmi}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Você já consumiu {{caloriesConsumed}} calorias hoje.</ion-label> 
+  </ion-item>
+
+  <ion-item>
+    Agora somente restam {{userHealthData.dailyCaloricNeeds - caloriesConsumed}} para serem consumidas.
+  </ion-item>
+
+</ion-card>
+
+<ion-label>
+  Refeições de hoje
+</ion-label>
+<ion-slides>
+  <ion-slide>
+    <!-- Seus dados de slide aqui -->
+  </ion-slide>
+  <ion-slide>
+    <!-- Seus dados de slide aqui -->
+  </ion-slide>
+</ion-slides>
+
+</ion-content>

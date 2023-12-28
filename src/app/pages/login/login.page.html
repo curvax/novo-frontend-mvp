@@ -1,0 +1,34 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <br><br>
+    <img class="logo" src="../../../assets/SAMPRlogo-removebg.png" alt="SamprLogo">
+    <br><br>
+  </ion-header>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <ion-label class="title">Login</ion-label>
+
+  
+    <ion-item>
+   
+      <ion-input label="E-Mail" class="email-input" formControlName="email" type="email"></ion-input>
+    </ion-item>
+
+  
+    <ion-item>
+
+      <ion-input label="Password" class="password-input" formControlName="password" type="password"></ion-input>
+    </ion-item>
+  
+ 
+
+<br>
+  
+    <ion-button class="button" expand="full" type="submit">Enviar</ion-button>
+    <br>
+    <ion-button color="warning" expand="full" fill="clear" routerLink="/signup">Cadastre-Se</ion-button>
+    <br><br><br>
+    <ion-button  expand="full" fill="clear" routerLink="/onboarding">Voltar</ion-button>
+  </form>
+</ion-content>

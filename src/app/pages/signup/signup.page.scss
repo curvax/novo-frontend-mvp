@@ -1,0 +1,42 @@
+.logo {
+    display: flex;
+    margin: auto;
+    max-width: 29px;
+}
+
+
+.title {
+    padding: 5%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+}
+
+.email-input {
+    max-width: 80%;
+    display: flex;
+    margin: auto;
+
+}
+
+.password-input {
+    max-width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.other-inputs {
+    max-width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.button {
+    max-width: 80%;
+    display: flex;
+    margin: auto;
+   // border-radius: 30px;
+}

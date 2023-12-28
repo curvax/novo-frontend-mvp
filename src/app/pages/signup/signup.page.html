@@ -1,0 +1,100 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <br>
+    <img class="logo" src="../../../assets/SAMPRlogo-removebg.png" alt="SamprLogo">
+    <br>
+  </ion-header>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <ion-label class="title">Cadastro</ion-label>
+
+  
+    <ion-item>
+   
+      <ion-input class="other-inputs" label="Nome" formControlName="name"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+ 
+      <ion-input class="other-inputs" label="E-Mail" formControlName="email" type="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+
+      <ion-input class="other-inputs" label="Senha" formControlName="password" type="password"></ion-input>
+    </ion-item>
+  
+    <!-- <ion-item>
+     
+      
+      <ion-input class="other-inputs" label="CPF/CNPJ" formControlName="cpfCnpj"></ion-input>
+    </ion-item> -->
+  
+    <!-- <ion-item>
+  
+      <ion-input class="other-inputs" label="Onde Trabalha?" formControlName="company"></ion-input>
+    </ion-item>
+   -->
+    <ion-item>
+
+      <ion-input class="other-inputs" label="Celular" formControlName="mobilePhone" type="tel"></ion-input>
+    </ion-item>
+  
+    <!-- <ion-item>
+  
+      <ion-input class="other-inputs" label="Telefone" formControlName="phone" type="tel"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+
+      <ion-input class="other-inputs" label="CEP" formControlName="postalCode"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+
+      <ion-input class="other-inputs" label="Endereço" formControlName="address"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+
+      
+      <ion-input class="other-inputs" label="Bairro" formControlName="province"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+    
+      <ion-input class="other-inputs" label="Estado" formControlName="state"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+
+      <ion-input class="other-inputs" label="Cidade" formControlName="city"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+    
+      <ion-input class="other-inputs" label="Numero" formControlName="addressNumber"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+
+      <ion-input class="other-inputs" label="E-Mails Adicionais" formControlName="additionalEmails" type="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+
+      <ion-textarea label="Observacoes" formControlName="observations"></ion-textarea>
+    </ion-item>
+  
+  -->
+
+<br>
+  
+    <ion-button class="button" expand="full" type="submit">Enviar</ion-button>
+    <br>
+    <ion-button color="warning" expand="full" fill="clear" routerLink="/login">Já Tenho Cadastro</ion-button>
+    <br><br><br>
+    <ion-button  expand="full" fill="clear" routerLink="/onboarding">Voltar</ion-button>
+  </form>
+</ion-content>
